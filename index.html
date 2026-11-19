@@ -10,43 +10,97 @@
     <title>EstatPro Bootstrap Proj Shot</title>
   </head>
   <body>
-    <!-- header -->
+    <!-- Header Section -->
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between px-5 py-2"
       >
         <a class="navbar-brand text-white fs-1" href="#">EstatPro</a>
         <div>
-          <a class="text-white text-decoration-none" href="#">Property</a>
+          <a class="text-white text-decoration-none" href="#property"
+            >Property</a
+          >
           <a class="text-white text-decoration-none" href="#">Management</a>
           <a class="text-white text-decoration-none" href="#">System</a>
         </div>
       </nav>
+    </header>
 
-      <main class="px-5 py-2">
-        <h1 class="fw-bold">Welcome Back, John!</h1>
-        <p class="text-secondary">
-          Here's what's happening with your properties today.
-        </p>
+    <!-- Main Section -->
 
-        <div class="d-flex gap-3 mt-4">
-          <div class="card flex-fill p-3 fs-5 text-secondary shadow">
-            Total Properties
-            <strong class="text-primary fw-bold fs-1">24</strong>
-            <span class="text-success">+4 New Properties</span>
-          </div>
-          <div class="card flex-fill p-3 fs-5 text-secondary shadow">
-            Occupied Properties
-            <strong class="text-success fw-bold fs-1">18</strong>
-            <span class="text-success">75% Occupancy Rate</span>
-          </div>
-          <div class="card flex-fill p-3 fs-5 text-secondary shadow">
-            Available Properties
-            <strong class="text-danger fw-bold fs-1">6</strong>
-            <span class="text-danger">Available for Rent</span>
+    <main class="px-5 py-2 mt-4">
+      <h1 class="fw-bold">Welcome Back, John!</h1>
+      <p class="text-secondary">
+        Here's what's happening with your properties today.
+      </p>
+
+      <div class="d-flex gap-3 mt-5">
+        <div class="card col-md-4 p-3 fs-5 text-secondary shadow">
+          Total Properties
+          <strong class="text-primary fw-bold fs-1">24</strong>
+          <span class="text-success">+4 New Properties</span>
+        </div>
+        <div class="card col-md-4 p-3 fs-5 text-secondary shadow">
+          Occupied Properties
+          <strong class="text-success fw-bold fs-1">18</strong>
+          <span class="text-success">75% Occupancy Rate</span>
+        </div>
+        <div class="card col-md-4 p-3 fs-5 text-secondary shadow">
+          Available Properties
+          <strong class="text-danger fw-bold fs-1">6</strong>
+          <span class="text-danger">Available for Rent</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Feature Section -->
+    <div id="property" class="px-5 py-2 mt-4">
+      <h3 class="fw-bold">Featured Properties</h3>
+      <p class="text-secondary">Explore some of our latest properties.</p>
+
+      <!-- Cards -->
+      <div class="d-flex gap-3 mt-5">
+        <!-- Card 1 -->
+        <div class="card shadow col-md-6">
+          <img
+            src="./images/Luxuary House.jpeg"
+            alt="Property 1"
+            class="img-fluid rounded m-3"
+          />
+          <div class="card-body">
+            <h4 class="fw-bold">Luxury Family House</h4>
+            <p class="text-secondary">123 Green Street, New York</p>
+            <div class="d-flex justify-content-between">
+              <div>
+                <span class="text-primary fw-bold fs-4">$2,500 / Month</span>
+              </div>
+              <div>
+                <button class="btn btn-success m-2 fw-bold">Occupied</button>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
-    </header>
+        <div class="card shadow col-md-6">
+          <img
+            src="./images/Modern City Apartment.jpeg"
+            alt="Property 1"
+            class="img-fluid rounded m-3"
+          />
+          <!-- Card 2 -->
+          <div class="card-body">
+            <h4 class="fw-bold">Modern City Apartment</h4>
+            <p class="text-secondary">45 Downtown Avenue, Chicago</p>
+            <div class="d-flex justify-content-between">
+              <div>
+                <span class="text-primary fw-bold fs-4">$1,800 / Month</span>
+              </div>
+              <div>
+                <button class="btn btn-danger m-2 fw-bold">Available</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
