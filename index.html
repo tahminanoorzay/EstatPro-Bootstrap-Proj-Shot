@@ -10,19 +10,43 @@
     <title>EstatPro Bootstrap Proj Shot</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between px-5 py-2"
       >
-        <div>
-          <a class="navbar-brand text-white fs-1" href="#">EstatPro</a>
-        </div>
+        <a class="navbar-brand text-white fs-1" href="#">EstatPro</a>
         <div>
           <a class="text-white text-decoration-none" href="#">Property</a>
           <a class="text-white text-decoration-none" href="#">Management</a>
           <a class="text-white text-decoration-none" href="#">System</a>
         </div>
       </nav>
+
+      <main class="px-5 py-2">
+        <h1 class="fw-bold">Welcome Back, John!</h1>
+        <p class="text-secondary">
+          Here's what's happening with your properties today.
+        </p>
+
+        <div class="d-flex gap-3 mt-4">
+          <div class="card flex-fill p-3 fs-5 text-secondary shadow">
+            Total Properties
+            <strong class="text-primary fw-bold fs-1">24</strong>
+            <span class="text-success">+4 New Properties</span>
+          </div>
+          <div class="card flex-fill p-3 fs-5 text-secondary shadow">
+            Occupied Properties
+            <strong class="text-success fw-bold fs-1">18</strong>
+            <span class="text-success">75% Occupancy Rate</span>
+          </div>
+          <div class="card flex-fill p-3 fs-5 text-secondary shadow">
+            Available Properties
+            <strong class="text-danger fw-bold fs-1">6</strong>
+            <span class="text-danger">Available for Rent</span>
+          </div>
+        </div>
+      </main>
     </header>
   </body>
 </html>
